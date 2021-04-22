@@ -99,9 +99,9 @@
 		2265C1C226321D89004942E7 /* bcpClone */ = {
 			isa = PBXGroup;
 			children = (
+				2265C1F8263221C6004942E7 /* components */,
 				2265C1C326321D89004942E7 /* AppDelegate.swift */,
 				2265C1C526321D89004942E7 /* SceneDelegate.swift */,
-				2265C1C726321D89004942E7 /* ViewController.swift */,
 				2265C1C926321D89004942E7 /* Main.storyboard */,
 				2265C1CC26321D8B004942E7 /* Assets.xcassets */,
 				2265C1CE26321D8B004942E7 /* LaunchScreen.storyboard */,
@@ -126,6 +126,46 @@
 				2265C1E726321D8C004942E7 /* Info.plist */,
 			);
 			path = bcpCloneUITests;
+			sourceTree = "<group>";
+		};
+		2265C1F8263221C6004942E7 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				2265C1FB2632222B004942E7 /* home */,
+				2265C1FA26322224004942E7 /* login */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		2265C1FA26322224004942E7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				2265C1FC2632223A004942E7 /* view */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		2265C1FB2632222B004942E7 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				2265C1FD26322242004942E7 /* view */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		2265C1FC2632223A004942E7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2265C1C726321D89004942E7 /* ViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2265C1FD26322242004942E7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
