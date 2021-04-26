@@ -15,6 +15,7 @@
 		2265C1D026321D8B004942E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2265C1CE26321D8B004942E7 /* LaunchScreen.storyboard */; };
 		2265C1DB26321D8C004942E7 /* bcpCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265C1DA26321D8C004942E7 /* bcpCloneTests.swift */; };
 		2265C1E626321D8C004942E7 /* bcpCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265C1E526321D8C004942E7 /* bcpCloneUITests.swift */; };
+		2265C20726375019004942E7 /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265C20626375019004942E7 /* KeyboardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2265C1E126321D8C004942E7 /* bcpCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bcpCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2265C1E526321D8C004942E7 /* bcpCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bcpCloneUITests.swift; sourceTree = "<group>"; };
 		2265C1E726321D8C004942E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2265C20626375019004942E7 /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		2265C1F8263221C6004942E7 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				2265C20426374FE8004942E7 /* keyboard */,
 				2265C1FB2632222B004942E7 /* home */,
 				2265C1FA26322224004942E7 /* login */,
 			);
@@ -164,6 +167,22 @@
 		2265C1FD26322242004942E7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2265C20426374FE8004942E7 /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2265C20526374FF4004942E7 /* view */,
+			);
+			path = keyboard;
+			sourceTree = "<group>";
+		};
+		2265C20526374FF4004942E7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2265C20626375019004942E7 /* KeyboardController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -298,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2265C20726375019004942E7 /* KeyboardController.swift in Sources */,
 				2265C1C826321D89004942E7 /* ViewController.swift in Sources */,
 				2265C1C426321D89004942E7 /* AppDelegate.swift in Sources */,
 				2265C1C626321D89004942E7 /* SceneDelegate.swift in Sources */,
