@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wuU-g3-xMP">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wuU-g3-xMP">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,58 +13,56 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bcpClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvt-5c-Ndg">
                                 <rect key="frame" x="0.0" y="598" width="419" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM5-tf-l0k">
+                                        <rect key="frame" x="8" y="6" width="111" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Consultas"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfD-YA-roI">
+                                        <rect key="frame" x="140" y="6" width="111" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Ingresar"/>
+                                        <connections>
+                                            <segue destination="XHa-R7-HOU" kind="show" id="W35-3n-xKZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpe-jP-h96">
+                                        <rect key="frame" x="271" y="6" width="111" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Ubícanos"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQA-Ae-xlP">
+                                        <rect key="frame" x="8" y="145" width="111" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Token"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yh-ik-emJ">
+                                        <rect key="frame" x="140" y="145" width="111" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Bloqueo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-vd-Zdx">
+                                        <rect key="frame" x="271" y="145" width="111" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ParaTi"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.058823529411764705" green="0.11764705882352941" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSv-zw-LkP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buenas tardes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSv-zw-LkP">
                                 <rect key="frame" x="50" y="187" width="162" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Buenas tardes">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="25" name="Flexo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM5-tf-l0k">
-                                <rect key="frame" x="20" y="616" width="111" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Consultas"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfD-YA-roI">
-                                <rect key="frame" x="152" y="616" width="111" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Ingresar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpe-jP-h96">
-                                <rect key="frame" x="283" y="616" width="111" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Ubícanos"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQA-Ae-xlP">
-                                <rect key="frame" x="20" y="755" width="111" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Token"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yh-ik-emJ">
-                                <rect key="frame" x="152" y="755" width="111" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Bloqueo"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-vd-Zdx">
-                                <rect key="frame" x="283" y="755" width="111" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ParaTi"/>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackLogin" translatesAutoresizingMaskIntoConstraints="NO" id="CPL-Ox-bBB">
                                 <rect key="frame" x="0.0" y="403" width="414" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,111 +83,110 @@
             <objects>
                 <viewController id="XHa-R7-HOU" customClass="KeyboardController" customModule="bcpClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hnr-L5-lwO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-m9-NKF">
-                                <rect key="frame" x="61" y="186" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYd-0B-WuL">
-                                <rect key="frame" x="173" y="186" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuI-hv-TID">
-                                <rect key="frame" x="287" y="186" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdf-Ec-I8i">
-                                <rect key="frame" x="61" y="324" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qx7-LH-NfU">
-                                <rect key="frame" x="173" y="324" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM0-UO-ujm">
-                                <rect key="frame" x="287" y="324" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-De-cE4">
-                                <rect key="frame" x="57" y="468" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hma-jr-Tfl">
-                                <rect key="frame" x="169" y="468" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfA-Fn-t8c">
-                                <rect key="frame" x="283" y="468" width="74" height="74"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="1" image="keyPad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOB-w2-Lu0">
-                                <rect key="frame" x="297" y="635" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmc-6s-rtZ">
+                                <rect key="frame" x="56" y="206" width="87" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyV-zK-IJg">
+                                <rect key="frame" x="152" y="207" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eE-dB-SNj">
+                                <rect key="frame" x="247" y="206" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljv-Bl-QEK">
+                                <rect key="frame" x="56" y="328" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTH-3u-pSM">
+                                <rect key="frame" x="151" y="327" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGd-OO-Qga">
+                                <rect key="frame" x="246" y="328" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJL-a7-e1z">
+                                <rect key="frame" x="56" y="455" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMD-Hz-x0B">
+                                <rect key="frame" x="151" y="455" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-ts-Kd6">
+                                <rect key="frame" x="246" y="455" width="87" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="1" image="keyPad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAL-B1-Ubg">
+                                <rect key="frame" x="263" y="585" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-61" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="delete">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ED7-lm-BlZ"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="qx7-LH-NfU" firstAttribute="centerY" secondItem="uYd-0B-WuL" secondAttribute="centerY" id="43I-f4-aPV"/>
-                            <constraint firstItem="eM0-UO-ujm" firstAttribute="centerY" secondItem="HuI-hv-TID" secondAttribute="centerY" id="MAz-FA-5N7"/>
-                            <constraint firstItem="Hma-jr-Tfl" firstAttribute="centerY" secondItem="uYd-0B-WuL" secondAttribute="centerY" id="O0F-68-joF"/>
-                            <constraint firstItem="uYd-0B-WuL" firstAttribute="centerX" secondItem="gNE-m9-NKF" secondAttribute="centerX" id="aUj-Ir-BHs"/>
-                            <constraint firstItem="HuI-hv-TID" firstAttribute="centerX" secondItem="gNE-m9-NKF" secondAttribute="centerX" id="e1p-pX-V09"/>
-                            <constraint firstItem="eM0-UO-ujm" firstAttribute="centerX" secondItem="zdf-Ec-I8i" secondAttribute="centerX" id="ec4-v7-mK8"/>
-                            <constraint firstItem="qx7-LH-NfU" firstAttribute="centerX" secondItem="zdf-Ec-I8i" secondAttribute="centerX" id="kdb-0l-abz"/>
-                            <constraint firstItem="Hma-jr-Tfl" firstAttribute="centerX" secondItem="3TJ-De-cE4" secondAttribute="centerX" id="pPw-IH-OZZ"/>
-                            <constraint firstItem="3TJ-De-cE4" firstAttribute="centerY" secondItem="gNE-m9-NKF" secondAttribute="centerY" id="q2D-Q7-0d2"/>
-                            <constraint firstItem="EfA-Fn-t8c" firstAttribute="centerY" secondItem="HuI-hv-TID" secondAttribute="centerY" id="rtS-dQ-6b8"/>
-                            <constraint firstItem="EfA-Fn-t8c" firstAttribute="centerX" secondItem="3TJ-De-cE4" secondAttribute="centerX" id="w5T-rO-gAk"/>
-                            <constraint firstItem="zdf-Ec-I8i" firstAttribute="centerY" secondItem="gNE-m9-NKF" secondAttribute="centerY" id="x7p-Ls-G45"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="woJ-Qa-aOi"/>
                     <connections>
-                        <outlet property="oneKeyButton" destination="gNE-m9-NKF" id="JPk-g5-B8R"/>
+                        <outlet property="pos1" destination="Fmc-6s-rtZ" id="twp-qM-5u2"/>
+                        <outlet property="pos2" destination="qyV-zK-IJg" id="gSr-3u-z2y"/>
+                        <outlet property="pos3" destination="7eE-dB-SNj" id="Q3h-0U-pUk"/>
+                        <outlet property="pos4" destination="ljv-Bl-QEK" id="tol-Lq-uff"/>
+                        <outlet property="pos5" destination="VTH-3u-pSM" id="d9H-rW-v5k"/>
+                        <outlet property="pos6" destination="YGd-OO-Qga" id="Dqp-BC-NzX"/>
+                        <outlet property="pos7" destination="nJL-a7-e1z" id="lti-4M-92Z"/>
+                        <outlet property="pos8" destination="rMD-Hz-x0B" id="1SY-fq-oSg"/>
+                        <outlet property="pos9" destination="Fsi-ts-Kd6" id="GOx-4I-9XX"/>
+                        <outlet property="posDelete" destination="HAL-B1-Ubg" id="pzE-vS-Jp4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzY-e5-XU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576.8115942028987" y="78.348214285714278"/>
+            <point key="canvasLocation" x="1575.3846153846152" y="78.199052132701425"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sNc-Xp-hlh">
@@ -197,7 +194,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wuU-g3-xMP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UjX-G5-g4H">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.18823529410000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
@@ -212,14 +209,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackLogin" width="720" height="350"/>
-        <image name="Bloqueo" width="110.5" height="110.5"/>
-        <image name="Consultas" width="110.5" height="110.5"/>
-        <image name="Ingresar" width="110.5" height="110.5"/>
-        <image name="ParaTi" width="110.5" height="110.5"/>
-        <image name="Token" width="110.5" height="110.5"/>
-        <image name="Ubícanos" width="110.5" height="110.5"/>
-        <image name="keyPad" width="79" height="79"/>
+        <image name="BackLogin" width="480" height="233.33332824707031"/>
+        <image name="Bloqueo" width="73.666664123535156" height="73.666664123535156"/>
+        <image name="Consultas" width="73.666664123535156" height="73.666664123535156"/>
+        <image name="Ingresar" width="73.666664123535156" height="73.666664123535156"/>
+        <image name="ParaTi" width="73.666664123535156" height="73.666664123535156"/>
+        <image name="Token" width="73.666664123535156" height="73.666664123535156"/>
+        <image name="Ubícanos" width="73.666664123535156" height="73.666664123535156"/>
+        <image name="delete" width="512" height="512"/>
+        <image name="keyPad" width="52.666667938232422" height="52.666667938232422"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

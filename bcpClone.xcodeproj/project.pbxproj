@@ -134,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				2265C20426374FE8004942E7 /* keyboard */,
-				2265C1FB2632222B004942E7 /* home */,
 				2265C1FA26322224004942E7 /* login */,
 			);
 			path = components;
@@ -148,25 +147,10 @@
 			path = login;
 			sourceTree = "<group>";
 		};
-		2265C1FB2632222B004942E7 /* home */ = {
-			isa = PBXGroup;
-			children = (
-				2265C1FD26322242004942E7 /* view */,
-			);
-			path = home;
-			sourceTree = "<group>";
-		};
 		2265C1FC2632223A004942E7 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				2265C1C726321D89004942E7 /* ViewController.swift */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		2265C1FD26322242004942E7 /* view */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = view;
 			sourceTree = "<group>";
