@@ -15,5 +15,6 @@ target 'bcpClone' do
   target 'bcpCloneUITests' do
     # Pods for testing
   end
-
+  pod 'Alamofire', '~> 5.2'
+  pod 'RxSwift'
 end
